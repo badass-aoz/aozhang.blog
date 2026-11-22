@@ -1,0 +1,29 @@
+{{- if and (.Param "comments") site.Params.waline.serverURL -}}
+{{- $isCJK := gt (len (findRE `[\x{4e00}-\x{9fff}]` .Title)) 0 -}}
+{{- $lang := cond $isCJK "zh-CN" "en" -}}
+<div id="waline"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.css" />
+<script type="module">
+  import { init } from 'https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.js';
+
+  const options = {
+    el: '#waline',
+    serverURL: {{ site.Params.waline.serverURL }},
+    path: {{ .RelPermalink }},
+    lang: {{ $lang }},
+    dark: 'html[data-theme="dark"]',
+    reaction: {{ site.Params.waline.reaction | default false }},
+    pageview: {{ site.Params.waline.pageview | default false }},
+    {{- with site.Params.waline.placeholder }}
+    locale: {
+      placeholder: {{ . }},
+    },
+    {{- end }}
+  };
+  {{- with site.Params.waline.turnstileKey }}
+  options.turnstileKey = {{ . }};
+  {{- end }}
+
+  init(options);
+</script>
+{{- end -}}
