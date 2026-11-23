@@ -1,7 +1,10 @@
 ---
 title: "Even Jensen Couldn't Leave the Prisoner's Dilemma"
 date: "2026-11-23T13:10:05-07:00"
-slug: "mag-7-playing-prisoners-dilemma"
+slug: "even-jensen-couldnt-leave-the-prisoners-dilemma"
+aliases:
+  - "/even-jensen-couldnt-leave-the-prisoners-dilemma/"
+  - "/posts/mag-7-playing-prisoners-dilemma/"
 categories:
   - "Scribble | 荒唐言"
 tags:
