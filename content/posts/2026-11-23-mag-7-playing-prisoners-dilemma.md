@@ -1,5 +1,5 @@
 ---
-title: "Mag 7 Playing Prisoner's Dilemma"
+title: "Even Jensen Couldn't Leave the Prisoner's Dilemma"
 date: "2026-11-23T13:10:05-07:00"
 slug: "mag-7-playing-prisoners-dilemma"
 categories:
