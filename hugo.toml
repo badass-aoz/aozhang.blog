@@ -67,7 +67,7 @@ enableRobotsTXT = true
     keys = ['title', 'permalink', 'summary', 'content']
 
   [params.waline]
-    serverURL = ''
+    serverURL = 'https://aozhang-blog-waline.vercel.app'
     reaction = true
     pageview = false
     turnstileKey = ''
