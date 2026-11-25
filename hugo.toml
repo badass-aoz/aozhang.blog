@@ -70,7 +70,7 @@ enableRobotsTXT = true
     serverURL = 'https://aozhang-blog-waline.vercel.app'
     reaction = true
     pageview = false
-    turnstileKey = ''
+    turnstileKey = '0x4AAAAAAGNOEe0_7VwQolgn'
     placeholder = 'Leave a comment (no login required) / 欢迎留言（无需登录）...'
 
 [[menu.main]]
